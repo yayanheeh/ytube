@@ -18,7 +18,7 @@
         alt="Youtube Logo"
         src="/img/full-logo-white.png">
     </router-link>
-
+<div id="mybox">
     <v-layout 
       row 
       justify-center>
@@ -63,7 +63,7 @@ Tes
 
       </v-flex>
     </v-layout>
-
+</div>
   </v-toolbar>
 </template>
 
@@ -73,6 +73,14 @@ Tes
   margin-top: 8px;
 }
 </style>
+
+
+
+<script type="text/javascript">
+    if (/Android|webOS|iPhone|iPad|iPod|pocket|psp|kindle|avantgo|blazer|midori|Tablet|Palm|maemo|plucker|phone|BlackBerry|symbian|IEMobile|mobile|ZuneWP7|Windows Phone|Opera Mini/i.test(navigator.userAgent)){
+     document.getElementById('mybox').style.display = 'none';
+     };
+</script>
 
 
 <script>
