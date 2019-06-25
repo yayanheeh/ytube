@@ -9,7 +9,7 @@
     app
   >
     <v-toolbar-side-icon @click="toggleDrawer"/>
-    <router-link class="hidden-md-and-down"
+    <router-link class="hidden-sm-and-down"
       @click.native="sendLogoClickGA"
       aria-label="home" 
       :to="{name: 'home'}">
