@@ -11,26 +11,15 @@
           <h3 class="headline mb-0">About vTyoob</h3>
           <br>
           <span>
-            Hi. I'm Pranav Jindal. <br>
-            This project is my naïve attempt aimed at making
-            a simple Material version of YouTube using Google APIs, VueJS and Vuetify. <br>
-            I make this project in my leisure time just to improve my front-end skills. <br>
-            <br>
+            Hi. I'm Kres <br>
+            Yplayer adalah project saya yang bertujuan membuat versi Materi YouTube yang sederhana menggunakan Google API, VueJS, dan Vuetify. 
+Saya membuat proyek ini di waktu senggang saya <br>
             <span class="font-italic">
               This project was previously written in AngularJS and now has been moved to VueJS.
             </span>
             <br>
           </span>
-          <br>
-          <span>
-            The code for the project can be found at
-            <a 
-              @click="sendContactGA('git-repo-link')"
-              target="_blank" 
-              href="https://github.com/pranavjindal999/Youtube-Material/tree/vuetube">
-              Github
-            </a> 
-          </span>
+          
           <br>
           <br>
           <span>Feel free to contact me via any of the following media.</span>
