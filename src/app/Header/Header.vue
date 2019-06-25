@@ -22,8 +22,7 @@
     <v-layout 
       row 
       justify-center>
-      <v-flex 
-        xs12 
+      <v-flex  
         md8 
         lg6 >
         <v-form 
