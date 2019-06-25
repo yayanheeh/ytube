@@ -94,11 +94,11 @@
 
 <router-link
       @click.native="sendLogoClickGA"
-      aria-label="home" 
-      :to="{name: 'home'}">
-    <v-btn icon>
+      aria-label="about" 
+      :to="{name: 'about'}">
+   
       <v-icon>more_vert</v-icon>
-    </v-btn>
+   
 </router-link>
   </v-toolbar>
 </template>
