@@ -9,7 +9,7 @@
     app
   >
     <v-toolbar-side-icon @click="toggleDrawer"/>
-    <router-link class="hidden-sm-and-down"
+    <router-link class="hidden-md-and-down"
       @click.native="sendLogoClickGA"
       aria-label="home" 
       :to="{name: 'home'}">
@@ -23,7 +23,7 @@
     <v-layout 
       row 
       justify-center>
-      <v-flex class="hidden-sm-md">
+      <v-flex class="hidden-md-and-up">
         <v-form 
           @submit.prevent="searchVideos">
           <v-combobox
