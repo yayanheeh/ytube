@@ -18,15 +18,12 @@
         alt="Youtube Logo"
         src="/img/full-logo-white.png">
     </router-link>
-<v-toolbar-items v-for="item in items" :key="item.text" class="hidden-sm-and-down">
-   
+
     <v-layout 
       row 
       justify-center>
       <v-flex 
-        xs12 
-        md8 
-        lg6 >
+        hidden-sm-and-down">
         <v-form 
           @submit.prevent="searchVideos">
           <v-combobox
@@ -56,7 +53,7 @@
 
       </v-flex>
     </v-layout>
-  </v-toolbar>
+  
 
 <v-spacer></v-spacer>
     <v-btn icon>
