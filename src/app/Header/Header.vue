@@ -23,7 +23,7 @@
     <v-layout 
       row 
       justify-center>
-      <v-flex class="hidden-sm-md-only">
+      <v-flex class="hidden-sm-md">
         <v-form 
           @submit.prevent="searchVideos">
           <v-combobox
