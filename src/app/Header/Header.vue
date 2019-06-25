@@ -52,14 +52,6 @@
             solo-inverted
           />
         </v-form>
-Tes
-
-<form id="app" action="#">
-<label :data-state="state" for="search">
-  <input type="text" placeholder="Search" @click="state = 'opan'" @blur="state='close'"/>
-  <i class="fa fa-search" @click="" aria-hidden="true"></i>
-</label>
-</form>
 
       </v-flex>
     </v-layout>
