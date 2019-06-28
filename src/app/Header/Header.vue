@@ -9,7 +9,7 @@
     app
   >
     <v-toolbar-side-icon @click="toggleDrawer"/>
-    <router-link class="hidden-sm-and-down"
+    <router-link 
       @click.native="sendLogoClickGA"
       aria-label="home" 
       :to="{name: 'home'}">
@@ -18,12 +18,14 @@
         alt="Youtube Logo"
         src="/img/full-logo-white.png">
     </router-link>
-<!--mobile-->
 
     <v-layout 
       row 
       justify-center>
-      <v-flex class="hidden-md-and-up">
+      <v-flex 
+        xs12 
+        md8 
+        lg6 >
         <v-form 
           @submit.prevent="searchVideos">
           <v-combobox
@@ -50,57 +52,75 @@
             solo-inverted
           />
         </v-form>
-
       </v-flex>
     </v-layout>
 
-<!--mobile-->
-    <v-layout 
-      row 
-      justify-center>
-      <v-flex class="hidden-sm-and-down">
-        <v-form 
-          @submit.prevent="searchVideos">
-          <v-combobox
-            ref="searchBox"
-            :menu-props="{
-              transition: 'slide-y-transition'
-            }"
-            clearable
-            class="mx-3"
-            no-filter
-            :loading="searching"
-            :items="searchSuggestions"
-            :append-icon="null"
-            :search-input.sync="query"
-            v-model="searchSelectedValue"
-            @input="searchVideos"
-            dark
-            flat
-            full-width
-            prepend-inner-icon="search"
-            hide-no-data
-            hide-details
-            :label="$t('searchHeaderPlaceholder')"
-            solo-inverted
-          />
-        </v-form>
-
-      </v-flex>
-    </v-layout>
-  
-
-<v-spacer></v-spacer>
-
-<router-link
-      @click.native="sendLogoClickGA"
-      aria-label="about" 
-      :to="{name: 'about'}">
-   
-      <v-icon>more_vert</v-icon>
-   
-</router-link>
   </v-toolbar>
+  
+  
+  <!-- mobile hiden -->
+  
+  
+  <v-row class="hidden-sm-and-up">
+   <v-toolbar
+    color="vTyoobRed"
+    dense
+    fixed
+    dark
+    clipped-left
+    :height="64"
+    app
+  >
+    <v-toolbar-side-icon @click="toggleDrawer"/>
+    <router-link 
+      @click.native="sendLogoClickGA"
+      aria-label="home" 
+      :to="{name: 'home'}">
+      <img 
+        class="logo mr-2" 
+        alt="Youtube Logo"
+        src="/img/full-logo-white.png">
+    </router-link>
+
+    <v-layout 
+      row 
+      justify-center>
+      <v-flex 
+        xs12 
+        md8 
+        lg6 >
+        <v-form 
+          @submit.prevent="searchVideos">
+          <v-combobox
+            ref="searchBox"
+            :menu-props="{
+              transition: 'slide-y-transition'
+            }"
+            clearable
+            class="mx-3"
+            no-filter
+            :loading="searching"
+            :items="searchSuggestions"
+            :append-icon="null"
+            :search-input.sync="query"
+            v-model="searchSelectedValue"
+            @input="searchVideos"
+            dark
+            flat
+            full-width
+            prepend-inner-icon="search"
+            hide-no-data
+            hide-details
+            :label="$t('searchHeaderPlaceholder')"
+            solo-inverted
+          />
+        </v-form>
+      </v-flex>
+    </v-layout>
+
+  </v-toolbar>
+  </v-row>
+  
 </template>
 
 <style scoped>
@@ -109,11 +129,15 @@
   margin-top: 8px;
 }
 </style>
-
-
-
-
-
+<script>
+new Vue({
+  el: '#app',
+  data () {
+    return {
+    }
+  }
+})
+</script>
 
 <script>
 import Header from "./Header.ts";
