@@ -1,9 +1,9 @@
 <template>
+<title>Yplay</title>
   <v-toolbar
-    color="light"
     dense
     fixed
-    dark
+    light
     clipped-left
     :height="64"
     app
