@@ -1,8 +1,8 @@
-#prevent serivce worker redirects and clear any pending netlify sw
+# To prevent serivce worker redirects and clear any pending netlify sw
 /service-worker.js /service-worker.js 200
 /swClearCache.js /swClearCache.js 200
 
-https://masyayan.netlify.com/* https://www.masyayan.netlify.com/:splat 301!
-https://masyayan.netlify.com/* https://masyayan.netlify.com/:splat 301!
+https://vtyoob.netlify.com/* https://www.vtyoob.com/:splat 301!
+https://staging-vtyoob.netlify.com/* https://staging.vtyoob.com/:splat 301!
 
 /*    /index.html   200
