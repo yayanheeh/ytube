@@ -9,15 +9,7 @@
     app
   >
     <v-toolbar-side-icon @click="toggleDrawer"/>
-    <router-link 
-      @click.native="sendLogoClickGA"
-      aria-label="home" 
-      :to="{name: 'home'}">
-      <img 
-        class="logo mr-2" 
-        alt="Youtube Logo"
-        src="/img/full-logo-white.png">
-    </router-link>
+    Hoye
 
     <v-layout 
       row 
